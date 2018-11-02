@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dojo Survey</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <style>
+        body {
+            padding: 10px;
+            background-color: lightslategray;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="/Result" method="post">
+        <div class="form-group">
+            <label for="exampleFormControlInput1">Your Name (required):</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" name='Name' value="">
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlSelect1">City</label>
+            <select class="form-control" id="exampleFormControlSelect1" name="City">
+                <option value='Chicago'>Chicago</option>
+                <option value='Los Angeles'>Los Angeles</option>
+                <option value='Seattle'>Seattle</option>
+                <option value='Milwaukee'>Milwaukee</option>
+                <option value='Portland'>Portland</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlSelect1">Favorite Language</label>
+            <select class="form-control" id="exampleFormControlSelect1" name="Language">
+                <option value='Python'>Python</option>
+                <option value='Javascript'>Javascript</option>
+                <option value='C#'>C#</option>
+                <option value='Ruby'>Ruby</option>
+                <option value='Haskell'>Haskell</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlTextarea1">Comments</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="Comments"></textarea>
+        </div>
+        <input class="btn btn-primary" type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
