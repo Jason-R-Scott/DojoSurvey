@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+@model DojoSurvey.Models.Survey;
 <html lang="en">
 
 <head>
@@ -42,19 +43,19 @@
     <table>
         <tr>
             <th>Name:</th>
-            <td>@ViewBag.Name</td>
+            <td>@Model.Name</td>
         </tr>
         <tr>
             <th>City:</th>
-            <td>@ViewBag.City</td>
+            <td>@Model.City</td>
         </tr>
         <tr>
             <th>Language:</th>
-            <td>@ViewBag.Language</td>
+            <td>@Model.Language</td>
         </tr>
         <tr>
             <th>Comments:</th>
-            <td>@ViewBag.Comments</td>
+            <td>@Model.Comments</td>
         </tr>
     </table>
 
